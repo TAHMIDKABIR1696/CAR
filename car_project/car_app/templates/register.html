@@ -4,7 +4,7 @@
 {% block title %}Register | Car Workshop{% endblock %}
 
 {% block content %}
-<div class="banner d-flex justify-content-center align-items-center" style="background-image: url('{% static 'assets/imgs/banner.jpg' %}'); min-height: 100vh;">
+
   <div class="form-box bg-white p-4 rounded shadow" style="width: 100%; max-width: 400px;">
 
     <div id="message-box" class="text-danger mb-3"></div>
@@ -15,17 +15,17 @@
 
       <div class="mb-3 text-start">
         <label for="username" class="form-label text-start">Username</label>
-        <input type="text" id="username" name="username" class="form-control" placeholder="Enter username" required />
+        <input type="text" id="username" name="username" class="form-control" placeholder="Enter username"  />
       </div>
 
       <div class="mb-3 text-start">
         <label for="pass" class="form-label text-start">Password</label>
-        <input type="password" id="pass" name="password" class="form-control" placeholder="Enter password" required />
+        <input type="password" id="pass" name="password" class="form-control" placeholder="Enter password"  />
       </div>
 
       <div class="mb-4 text-start">
         <label for="c_pass" class="form-label text-start">Confirm Password</label>
-        <input type="password" id="c_pass" name="confirm_password" class="form-control" placeholder="Confirm password" required />
+        <input type="password" id="c_pass" name="confirm_password" class="form-control" placeholder="Confirm password"  />
       </div>
 
       <div class="d-grid">
@@ -33,7 +33,7 @@
       </div>
     </form>
   </div>
-</div>
+
 
 
 <script>
@@ -59,7 +59,7 @@
       return;
     }
     if (pass !== c_pass) {
-      messageBox.innerText = "Passwords do not match!";
+      messageBox.innerText = "Passwords does not match with the confirm password!";
       return;
     }
   

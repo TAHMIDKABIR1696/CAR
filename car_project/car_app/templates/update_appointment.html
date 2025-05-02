@@ -4,7 +4,6 @@
 {% block title %}Appointment | Car Workshop{% endblock %}
 
 {% block content %}
-<div class="banner" style="background-image: url('{% static 'assets/imgs/banner.jpg' %}'); padding: 5rem 0;">
     <div class="container bg-white rounded shadow p-4 mt-5" style="max-width: 900px;">
       <div id="message-box" class="text-danger mb-3"></div>
         <h3 class="text-center mb-3">Book Your Car Service</h3>
@@ -39,7 +38,6 @@
               </div>
         </form>
     </div>
-</div>
 <script>
     function checkAvailability() {
       const date = document.getElementById("appointment_date").value;
